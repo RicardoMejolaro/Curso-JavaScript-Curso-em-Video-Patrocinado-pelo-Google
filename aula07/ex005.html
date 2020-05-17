@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro JS</title>
+
+  <style>
+    body {
+      background-color: rgb(49, 101, 121);
+      color: white;
+      font: normal 20pt Arial;
+    }
+
+  </style>
+
+</head>
+<body>
+    <h1>Iniciando os estudos do DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javaScript</p>
+    <div>Clique aqui</div>
+
+    <script>
+      var p1 = document.getElementsByTagName('p')[1]
+      document.write('O que está escrito dentro da TAG parágrafo é: ' + p1.innerHTML)
+      p1.style.color = 'yellow'
+    </script>
+</body>
+</html>

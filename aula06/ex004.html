@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    var nome = window.prompt('Qual é o seu nome?')
+    document.write(`Olá ${nome} seu nome tem ${nome.length} letras! </br></br>`)
+    document.write(`Seu nome em letras maiúsculas é: ${nome.toUpperCase()}</br></br>`)
+    document.write(`Seu nome em letras minúsculas é: ${nome.toLowerCase()}</br></br>`)
+
+    var salario = 1545.5
+
+    document.write(`Seu salário em Real é: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</br></br>`)
+    document.write(`Seu salário em Dólar é: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</br></br>`)
+    document.write(`Seu salário em Euro é: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}</br></br>`)
+
+  </script>
+</body>
+</html>
